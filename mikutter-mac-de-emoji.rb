@@ -8,7 +8,7 @@ module Pango
       @regex ||= Regexp.new(/([\u{1F300}-\u{1F55B}]+)/) 
 
       emojied_text = text.gsub(@regex) {
-        "<span font_family=\"Apple カラー絵文字\">#{$1}</span>"
+        "<span font_family=\"Segoe UI Symbol\">#{$1}</span>"
       }
 
       parse_markup_org(emojied_text)
